@@ -3,22 +3,23 @@ package com.javacode2018.lesson001.demo1;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * 公众号：路人甲Java，工作10年的前阿里P7分享Java、算法、数据库方面的技术干货！坚信用技术改变命运，让家人过上更体面的生活!
+ * 锟斤拷锟节号ｏ拷路锟剿硷拷Java锟斤拷锟斤拷锟斤拷10锟斤拷锟角帮拷锟斤拷锟絇7锟斤拷锟斤拷Java锟斤拷锟姐法锟斤拷锟斤拷锟捷库方锟斤拷募锟斤拷锟斤拷苫锟斤拷锟斤拷锟斤拷锟斤拷眉锟斤拷锟斤拷谋锟斤拷锟斤拷耍锟斤拷眉锟斤拷斯锟斤拷细锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷!
  */
 public class Client {
 
     public static void main(String[] args) {
-        //1.bean配置文件位置
+        //1.bean锟斤拷锟斤拷锟侥硷拷位锟斤拷
         String beanXml = "classpath:/com/javacode2018/lesson001/demo1/bean.xml";
 
-        //2.创建ClassPathXmlApplicationContext容器，给容器指定需要加载的bean配置文件
+        //2.锟斤拷锟斤拷ClassPathXmlApplicationContext锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷指锟斤拷锟斤拷要锟斤拷锟截碉拷bean锟斤拷锟斤拷锟侥硷拷
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(beanXml);
 
-        //3.从容器中获取需要的bean
+        //3.锟斤拷锟斤拷锟斤拷锟叫伙拷取锟斤拷要锟斤拷bean
         HelloWorld helloWorld = context.getBean("helloWorld", HelloWorld.class);
 
-        //4.使用对象
+        //4.使锟矫讹拷锟斤拷
         helloWorld.say();
+        
 
     }
 }
