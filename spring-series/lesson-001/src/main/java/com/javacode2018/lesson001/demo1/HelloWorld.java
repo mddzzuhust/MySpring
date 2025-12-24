@@ -1,7 +1,7 @@
 package com.javacode2018.lesson001.demo1;
 
 /**
- * ¹«ÖÚºÅ£ºÂ·ÈË¼×Java£¬¹¤×÷10ÄêµÄÇ°°¢ÀïP7·ÖÏíJava¡¢Ëã·¨¡¢Êý¾Ý¿â·½ÃæµÄ¼¼Êõ¸É»õ£¡¼áÐÅÓÃ¼¼Êõ¸Ä±äÃüÔË£¬ÈÃ¼ÒÈË¹ýÉÏ¸üÌåÃæµÄÉú»î!
+ * å…¬ä¼—å·ï¼šè·¯äººç”²Javaï¼Œå·¥ä½œ10å¹´çš„å‰é˜¿é‡ŒP7åˆ†äº«Javaã€ç®—æ³•ã€æ•°æ®åº“æ–¹é¢çš„æŠ€æœ¯å¹²è´§ï¼åšä¿¡ç”¨æŠ€æœ¯æ”¹å˜å‘½è¿ï¼Œè®©å®¶äººè¿‡ä¸Šæ›´ä½“é¢çš„ç”Ÿæ´»!
  */
 public class HelloWorld {
     public void say() {

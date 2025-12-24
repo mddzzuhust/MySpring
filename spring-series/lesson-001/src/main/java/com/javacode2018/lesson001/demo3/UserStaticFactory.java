@@ -6,7 +6,7 @@ public class UserStaticFactory {
         System.out.println(UserStaticFactory.class + ".buildUser1()");
 
         UserModel userModel = new UserModel();
-        userModel.setName("ÎÒÊÇÎŞ²Î¾²Ì¬¹¹Ôì·½·¨´´½¨µÄ£¡");
+        userModel.setName("æˆ‘æ˜¯æ— å‚é™æ€æ„é€ æ–¹æ³•åˆ›å»ºçš„ï¼");
         return userModel;
     }
 

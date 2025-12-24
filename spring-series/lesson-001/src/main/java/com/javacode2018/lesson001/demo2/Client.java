@@ -6,30 +6,30 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.Arrays;
 
 /**
- * ¹«ÖÚºÅ£ºÂ·ÈË¼×Java£¬¹¤×÷10ÄêµÄÇ°°¢ÀïP7·ÖÏíJava¡¢Ëã·¨¡¢Êı¾İ¿â·½ÃæµÄ¼¼Êõ¸É»õ£¡¼áĞÅÓÃ¼¼Êõ¸Ä±äÃüÔË£¬ÈÃ¼ÒÈË¹ıÉÏ¸üÌåÃæµÄÉú»î!
+ * å…¬ä¼—å·ï¼šè·¯äººç”²Javaï¼Œå·¥ä½œ10å¹´çš„å‰é˜¿é‡ŒP7åˆ†äº«Javaã€ç®—æ³•ã€æ•°æ®åº“æ–¹é¢çš„æŠ€æœ¯å¹²è´§ï¼åšä¿¡ç”¨æŠ€æœ¯æ”¹å˜å‘½è¿ï¼Œè®©å®¶äººè¿‡ä¸Šæ›´ä½“é¢çš„ç”Ÿæ´»!
  */
 public class Client {
 
     public static void main(String[] args) {
-        //1.beanÅäÖÃÎÄ¼şÎ»ÖÃ
+        //1.beané…ç½®æ–‡ä»¶ä½ç½®
         String beanXml = "classpath:/com/javacode2018/lesson001/demo2/bean.xml";
 
-        //2.´´½¨ClassPathXmlApplicationContextÈİÆ÷£¬¸øÈİÆ÷Ö¸¶¨ĞèÒª¼ÓÔØµÄbeanÅäÖÃÎÄ¼ş
+        //2.åˆ›å»ºClassPathXmlApplicationContextå®¹å™¨ï¼Œç»™å®¹å™¨æŒ‡å®šéœ€è¦åŠ è½½çš„beané…ç½®æ–‡ä»¶
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(beanXml);
 
         for (String beanName : Arrays.asList("user1", "user2", "user3", "user4", "user5")) {
-            //»ñÈ¡beanµÄ±ğÃû
+            //è·å–beançš„åˆ«å
             String[] aliases = context.getAliases(beanName);
-            System.out.println(String.format("beanName:%s,±ğÃû:[%s]", beanName, String.join(",", aliases)));
+            System.out.println(String.format("beanName:%s,åˆ«å:[%s]", beanName, String.join(",", aliases)));
         }
 
-        System.out.println("springÈİÆ÷ÖĞËùÓĞbeanÈçÏÂ£º");
+        System.out.println("springå®¹å™¨ä¸­æ‰€æœ‰beanå¦‚ä¸‹ï¼š");
 
-        //getBeanDefinitionNamesÓÃÓÚ»ñÈ¡ÈİÆ÷ÖĞËùÓĞbeanµÄÃû³Æ
+        //getBeanDefinitionNamesç”¨äºè·å–å®¹å™¨ä¸­æ‰€æœ‰beançš„åç§°
         for (String beanName : context.getBeanDefinitionNames()) {
-            //»ñÈ¡beanµÄ±ğÃû
+            //è·å–beançš„åˆ«å
             String[] aliases = context.getAliases(beanName);
-            System.out.println(String.format("beanName:%s,±ğÃû:[%s]", beanName, String.join(",", aliases)));
+            System.out.println(String.format("beanName:%s,åˆ«å:[%s]", beanName, String.join(",", aliases)));
         }
 
     }

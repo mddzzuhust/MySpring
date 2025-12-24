@@ -8,7 +8,7 @@ public class Client {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(beanXml);
 
-        System.out.println("springÈİÆ÷ÖĞËùÓĞbeanÈçÏÂ£º");
+        System.out.println("springå®¹å™¨ä¸­æ‰€æœ‰beanå¦‚ä¸‹ï¼š");
 
         for (String beanName :context.getBeanDefinitionNames()){
             System.out.println(beanName+":"+context.getBean(beanName));
@@ -17,7 +17,7 @@ public class Client {
         System.out.println("--------------------------");
 
         System.out.println();
-        //¶à´Î»ñÈ¡createByFactoryBean¿´¿´ÊÇ·ñÊÇÍ¬Ò»¸ö¶ÔÏó
+        //å¤šæ¬¡è·å–createByFactoryBeançœ‹çœ‹æ˜¯å¦æ˜¯åŒä¸€ä¸ªå¯¹è±¡
         System.out.println("createByFactoryBean:" + context.getBean("createByFactoryBean"));
         System.out.println("createByFactoryBean:" + context.getBean("createByFactoryBean"));
     }
